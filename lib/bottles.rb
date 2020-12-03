@@ -313,10 +313,8 @@ class Bottles
 
   def verses(start, ending)
     result = [];
-    # require 'pry'; binding.pry
-    # + "\n"
+
     (ending..start).each { |line| result.unshift verse(line) }
-    # require 'pry'; binding.pry
     result.join("\n")
   end
 end
